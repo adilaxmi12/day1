@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-18T04:05:32 PDT" name="Suite" finished-at="2022-05-18T04:06:20 PDT" duration-ms="48739">
+    <groups>
+    </groups>
+    <test started-at="2022-05-18T04:05:32 PDT" name="Test" finished-at="2022-05-18T04:06:20 PDT" duration-ms="48739">
+      <class name="Testcases.TC_LoginPage">
+        <test-method is-config="true" signature="browserini(java.lang.String)[pri:0, instance:Testcases.TC_LoginPage@66498326]" started-at="2022-05-18T04:05:32 PDT" name="browserini" finished-at="2022-05-18T04:05:49 PDT" duration-ms="17684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserini -->
+        <test-method signature="loginData(java.lang.String,java.lang.String)[pri:0, instance:Testcases.TC_LoginPage@66498326]" started-at="2022-05-18T04:05:49 PDT" name="loginData" data-provider="getData" finished-at="2022-05-18T04:05:51 PDT" duration-ms="1174" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr404077]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DELL-PC', ip: '192.168.184.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [10c1a660-db40-47d5-a3b2-2017369b4d98, findElement {using=xpath, value=//h2[text()='Guru99 Bank']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220304162637, moz:debuggerAddress: localhost:61344, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4020, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, proxy: Proxy(), se:cdp: ws://localhost:61344/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10c1a660-db40-47d5-a3b2-2017369b4d98]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DELL-PC', ip: '192.168.184.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [10c1a660-db40-47d5-a3b2-2017369b4d98, findElement {using=xpath, value=//h2[text()='Guru99 Bank']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220304162637, moz:debuggerAddress: localhost:61344, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4020, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, proxy: Proxy(), se:cdp: ws://localhost:61344/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10c1a660-db40-47d5-a3b2-2017369b4d98
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at pageobject.Homepage.getTitle(Homepage.java:16)
+at Testcases.TC_LoginPage.loginData(TC_LoginPage.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginData -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_LoginPage@66498326]" started-at="2022-05-18T04:05:51 PDT" name="teardown" finished-at="2022-05-18T04:05:52 PDT" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="browserini(java.lang.String)[pri:0, instance:Testcases.TC_LoginPage@66498326]" started-at="2022-05-18T04:05:52 PDT" name="browserini" finished-at="2022-05-18T04:06:03 PDT" duration-ms="10665" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserini -->
+        <test-method signature="loginData(java.lang.String,java.lang.String)[pri:0, instance:Testcases.TC_LoginPage@66498326]" started-at="2022-05-18T04:06:03 PDT" name="loginData" data-provider="getData" finished-at="2022-05-18T04:06:03 PDT" duration-ms="824" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[128963]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nybUmes]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DELL-PC', ip: '192.168.184.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0a0e6e16-e26a-49c5-b9d5-f3790ebbc104, findElement {using=xpath, value=//h2[text()='Guru99 Bank']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220304162637, moz:debuggerAddress: localhost:62213, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4616, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, proxy: Proxy(), se:cdp: ws://localhost:62213/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0a0e6e16-e26a-49c5-b9d5-f3790ebbc104]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DELL-PC', ip: '192.168.184.109', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0a0e6e16-e26a-49c5-b9d5-f3790ebbc104, findElement {using=xpath, value=//h2[text()='Guru99 Bank']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220304162637, moz:debuggerAddress: localhost:62213, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4616, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, proxy: Proxy(), se:cdp: ws://localhost:62213/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0a0e6e16-e26a-49c5-b9d5-f3790ebbc104
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at pageobject.Homepage.getTitle(Homepage.java:16)
+at Testcases.TC_LoginPage.loginData(TC_LoginPage.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginData -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_LoginPage@66498326]" started-at="2022-05-18T04:06:03 PDT" name="teardown" finished-at="2022-05-18T04:06:05 PDT" duration-ms="1219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="browserini(java.lang.String)[pri:0, instance:Testcases.TC_LoginPage@66498326]" started-at="2022-05-18T04:06:05 PDT" name="browserini" finished-at="2022-05-18T04:06:16 PDT" duration-ms="11537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserini -->
+        <test-method signature="loginData(java.lang.String,java.lang.String)[pri:0, instance:Testcases.TC_LoginPage@66498326]" started-at="2022-05-18T04:06:16 PDT" name="loginData" data-provider="getData" finished-at="2022-05-18T04:06:19 PDT" duration-ms="3216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr404077]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nybUmes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginData -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_LoginPage@66498326]" started-at="2022-05-18T04:06:19 PDT" name="teardown" finished-at="2022-05-18T04:06:20 PDT" duration-ms="1058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testcases.TC_LoginPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
